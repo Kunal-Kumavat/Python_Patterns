@@ -204,11 +204,43 @@ pattern(height)
 # 1 2 4 8 16 
 def pattern(height):
     for i in range(1,height+1):
-        a = 1
-        for k in range(1,i+1):
-            print(1*a,end=' ')
-            a *= 2
+        for k in range(i):
+            print(2**k,end=' ')
         print("")
+        
+height = int(input("Enter pattern height :: "))
+pattern(height)
+
+
+
+# 1  
+# 2 1  
+# 4 2 1  
+# 8 4 2 1  
+# 16 8 4 2 1  
+def pattern(height):
+    for i in range(height):
+        for k in range(i,-1,-1):
+            print(2**k,end=' ')
+        print(" ")
+        
+height = int(input("Enter pattern height :: "))
+pattern(height)
+
+
+
+# 1  
+# 1 2 1  
+# 1 2 4 2 1  
+# 1 2 4 8 4 2 1  
+# 1 2 4 8 16 8 4 2 1
+def pattern(height):
+    for i in range(height):
+        for k in range(i+1):
+            print(2**k,end=' ')
+        for j in range(i-1,-1,-1):
+            print(2**j,end=' ')
+        print(" ")
         
 height = int(input("Enter pattern height :: "))
 pattern(height)
