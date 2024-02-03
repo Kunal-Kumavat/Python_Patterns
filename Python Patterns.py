@@ -385,3 +385,23 @@ def pattern(height):
         
 height = int(input('Enter Pattern Height :: '))
 pattern(height)
+
+
+
+# 5 4 3 2 1 1 2 3 4 5  
+# 4 3 2 1     1 2 3 4  
+# 3 2 1         1 2 3  
+# 2 1             1 2  
+# 1                 1
+def pattern(height):
+    a = 0
+    for i in range(height,0,-1):
+        for k in range(i,0,-1):
+            print(k, end=' ')
+        print(' '*a,end='')
+        for j in range(1,i+1):
+            print(j,end=' ')
+        a += 4
+        print(' ')
+height = int(input('Enter Pattern Height :: '))
+pattern(height)
