@@ -405,3 +405,17 @@ def pattern(height):
         print(' ')
 height = int(input('Enter Pattern Height :: '))
 pattern(height)
+
+
+
+#  * * * * * 
+#   * * * * 
+#    * * * 
+#     * * 
+#      *
+def pattern(height):
+    for i in range(height,0,-1):
+        print (' '*(height-i)+'* '*i)
+    
+height = int(input('Enter Pattern Height :: '))
+pattern(height)
