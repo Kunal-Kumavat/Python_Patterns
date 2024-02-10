@@ -419,3 +419,24 @@ def pattern(height):
     
 height = int(input('Enter Pattern Height :: '))
 pattern(height)
+
+
+
+#  * 
+#  * * 
+#  * * * 
+#  * * * * 
+#  * * * * * 
+#  * * * * 
+#  * * * 
+#  * * 
+#  *
+def pattern(width):
+    for i in range(1,width):
+        print("* "*i)
+    for k in range(width,0,-1):
+        print("* "*k)
+    print("")
+    
+width = int(input("Enter Pattern Width :: "))
+pattern(width)
