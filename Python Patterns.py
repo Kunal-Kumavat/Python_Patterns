@@ -449,7 +449,7 @@ pattern(width)
 def pattern(height):
     for i in range(1,height+1):
         #print("  "*(height-i),"* "*i) #Passing Double "   " white_spaces
-        print((" "*(height-i))*2,"* "*i) #Passing Single " " white space
+        print(" "*((height-i)*2),"* "*i) #Passing Single " " white space
         
 height = int(input("Enter Pattern Height :: "))
 pattern(height)
@@ -467,3 +467,23 @@ def pattern(height):
 
 height = int(input("Enter Pattern Height :: "))
 pattern(height)
+
+
+
+# * 
+# * * 
+# * * * 
+# * * * * 
+# 
+# * * * * 
+# * * * 
+# * * 
+# *
+def pattern(width):
+    for i in range(1,width+1):
+        print("* "*i)
+    print(" ")
+    for i in range(width,0,-1):
+        print("* "*i)
+
+pattern(int(input("Enter Pattern Width :: ")))
