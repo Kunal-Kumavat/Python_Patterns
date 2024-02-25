@@ -487,3 +487,22 @@ def pattern(width):
         print("* "*i)
 
 pattern(int(input("Enter Pattern Width :: ")))
+
+
+
+#      * 
+#     * * 
+#    * * * 
+#   * * * * 
+#  * * * * * 
+#   * * * * 
+#    * * * 
+#     * * 
+#      * 
+def pattern(size):
+    for i in range(1,size):
+        print(" "*(size-i),"* "*i)
+    for i in range(size,0,-1):
+        print(" "*(size-i),"* "*i)
+    
+pattern(int(input("Enter Pattern Size :: ")))
