@@ -506,3 +506,18 @@ def pattern(size):
         print(" "*(size-i),"* "*i)
     
 pattern(int(input("Enter Pattern Size :: ")))
+
+
+
+#  ***** - *****
+#  **** --- ****
+#  *** ----- ***
+#  ** ------- **
+#  * --------- *
+def pattern(height):
+    a = 1
+    for i in range(height,0,-1):
+        print("*"*i,"-"*a,"*"*i)
+        a += 2
+        
+pattern(int(input("Enter Pattern Height :: ")))
