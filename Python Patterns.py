@@ -538,3 +538,17 @@ def pattern(height):
         print('')
             
 pattern(int(input("Enter Pattern Height :: ")))
+
+
+
+#  P
+#  Py
+#  Pyt
+#  Pyth
+#  Pytho
+#  Python
+def pattern(word):
+    for i in range(1,len(word)+1):
+        print(word[0:i])
+
+pattern(str(input("Enter Word :: ")))
