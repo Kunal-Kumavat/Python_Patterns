@@ -573,3 +573,23 @@ def pattern(height):
     
 height = int(input("Enter Pattern Height :: "))
 pattern(height)
+
+
+
+# A B C D E F G 
+# H I J K L M 
+# N O P Q R 
+# S T U V 
+# W X Y 
+# Z [ 
+# \
+def pattern(height):
+    asciiNumber = 65
+    for i in range(height,0,-1):
+        for k in range(1,i):
+            print(chr(asciiNumber),end=' ')
+            asciiNumber += 1
+        print("")
+        
+height = int(input("Enter Pattern Height :: "))
+pattern(height)
