@@ -638,3 +638,21 @@ def pattern(height):
         
 height = int(input("Enter Pattern Height :: "))
 pattern(height)
+
+
+
+# * * * * * 
+# *       *
+# *       *
+# *       *
+# * * * * * 
+def square(size):
+    print("* "*size)
+    if size > 2:
+        mid = size-2
+        for i in range(mid):
+            print("*" , "  "*mid + "*")
+    print("* "*size)
+
+size = int(input("Enter Square Size :: "))
+square(size)
