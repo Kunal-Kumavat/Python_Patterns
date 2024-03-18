@@ -656,3 +656,24 @@ def square(size):
 
 size = int(input("Enter Square Size :: "))
 square(size)
+
+
+
+#     *
+#    * *
+#   *   *
+#  *     *
+# *       *
+#* * * * * * 
+def triangle(size):
+    a = 1
+    for i in range(1,size+1):
+        if i ==  size:
+            print("* "*i)
+        elif i > 1:
+            print(" "*(size-i)+"*"+" "*a+"*")
+            a += 2
+        else:
+            print(" "*(size-i)+"*")
+
+triangle(int(input("Ener Triangle Size :: ")))
