@@ -677,3 +677,22 @@ def triangle(size):
             print(" "*(size-i)+"*")
 
 triangle(int(input("Ener Triangle Size :: ")))
+
+
+
+#  * * * * * 
+#   * * * * 
+#    * * * 
+#     * * 
+#      * 
+#     * * 
+#    * * * 
+#   * * * * 
+#  * * * * *
+def pattern(height):
+    for i in range(height,0,-1):
+        print(" "*(height-i),"* "*i)
+    for j in range(2,height+1):
+        print(" "*(height-j),"* "*j)
+
+pattern(int(input("Enter Pattern height :: ")))
